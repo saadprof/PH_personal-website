@@ -136,9 +136,6 @@ body {
 #footer #social-container img {
     width: 40%;
 }
-* {
-    outline: 1px solid greenyellow;
-}
 
 @media screen and (max-width: 576px) {
     #header #navbar {
