@@ -1,137 +1,177 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
-.common-btn{
+.common-btn {
     padding: 15px 35px;
     color: #fff;
-    background-image: linear-gradient(to top, #f56360e7, #F56260);
+    background-image: linear-gradient(to top, #f56360e7, #f56260);
     border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
 }
-.common-paragraph{
-    color: rgba(0,0,0,0.7);
-    margin: .8rem 0;
+.common-paragraph {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0.8rem 0;
 }
 
-#header #navbar{
+#header #navbar {
     width: 80%;
     margin: 2rem auto;
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
 }
-#header #navbar a{
+#header #navbar a {
     text-decoration: none;
     color: grey;
     font-weight: bold;
     padding: 10px 20px;
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 5px;
 }
 
-#header #header-banner{
+#header #header-banner {
     width: 80%;
     margin: 1rem auto;
 }
-#header #header-banner .banner{
+#header #header-banner .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15rem;
 }
-#header #header-banner .banner img{
+#header #header-banner .banner img {
     width: 40%;
 }
-#header #header-banner .banner-content{
+#header #header-banner .banner-content {
     width: 50%;
 }
-#header #header-banner .banner-content h1, #main #latest-project h1{
+#header #header-banner .banner-content h1,
+#main #latest-project h1 {
     font-size: 4rem;
     color: #363060;
 }
-#header #header-banner .banner-content span, #main #latest-project span{
+#header #header-banner .banner-content span,
+#main #latest-project span {
     font-size: 4rem;
-    color: #FF8367;
+    color: #ff8367;
 }
 
-#main{
+#main {
     margin: 4rem 0;
-    background-color: #FCF9F8;
+    background-color: #fcf9f8;
 }
-#main #latest-project{
+#main #latest-project {
     width: 80%;
     margin: 5rem auto;
     text-align: center;
 }
-#main #latest-project #project-container{
+#main #latest-project #project-container {
     margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
 }
-#main #latest-project #project-container .project{
-    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px;
-    border: 1px solid rgba(0,0,0,0.06);
+#main #latest-project #project-container .project {
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     padding: 1rem;
     margin: 0 0 5rem 0;
 }
-#main #latest-project #project-container img{
+#main #latest-project #project-container img {
     width: 100%;
 }
-#main #latest-project #project-container h2{
+#main #latest-project #project-container h2 {
     color: #363060;
     margin: 1rem 0;
 }
-#main #latest-project #project-container p{
+#main #latest-project #project-container p {
     text-align: justify;
 }
 
-
-#footer #inquiry{
+#footer #inquiry {
     width: 50%;
     margin: 2rem auto;
-    background-image: url('icons/Group_33094_1.png');
+    background-image: url("icons/Group_33094_1.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-#footer #inquiry div{
+#footer #inquiry div {
     padding: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#footer #inquiry h1{
+#footer #inquiry h1 {
     color: #ffffff;
     font-size: 2rem;
 }
 
-#footer #socials{
+#footer #socials {
     margin: 4rem auto;
     text-align: center;
 }
-#footer #socials h2{
+#footer #socials h2 {
     color: #363060;
     font-size: 2rem;
-    margin: .8rem 0;
+    margin: 0.8rem 0;
 }
-#footer #socials h3{
-    color: rgba(0,0,0,0.5);
+#footer #socials h3 {
+    color: rgba(0, 0, 0, 0.5);
 }
-#footer #social-container{
+#footer #social-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0;
 }
-#footer #social-container img{
+#footer #social-container img {
     width: 40%;
+}
+* {
+    outline: 1px solid greenyellow;
+}
+
+@media screen and (max-width: 576px) {
+    #header #navbar {
+        width: 100%;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    #header #header-banner {
+        width: 100%;
+    }
+    #header #header-banner .banner {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+    #header #header-banner .banner img {
+        display: none;
+    }
+    #header #header-banner .banner-content {
+        width: 80%;
+    }
+    #header #header-banner .banner-content h1,
+    #main #latest-project h1 {
+        font-size: 2rem;
+    }
+    #header #header-banner .banner-content span,
+    #main #latest-project span {
+        font-size: 2rem;
+    }
+    #main #latest-project #project-container {
+        flex-direction: column;
+    }
+    #footer #inquiry{
+        width: 100%;
+        background-size: cover;
+    }
 }
