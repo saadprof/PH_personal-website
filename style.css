@@ -51,11 +51,39 @@ body{
 #header #header-banner .banner-content{
     width: 50%;
 }
-#header #header-banner .banner-content h1{
-    font-size: 4rem;
+#header #header-banner .banner-content h1, #main #latest-project h1{
+    font-size: 4rem, 3rem;
     color: #363060;
 }
-#header #header-banner .banner-content span{
+#header #header-banner .banner-content span, #main #latest-project span{
     font-size: 4rem;
     color: #FF8367;
+}
+
+#main{
+    margin: 5rem 0 3rem 0;
+}
+#main #latest-project{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+#main #latest-project #project-container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+#main #latest-project #project-container .project{
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px;
+    border: 1px solid rgba(0,0,0,0.03);
+    border-radius: 10px;
+    padding: 1rem;
+}
+#main #latest-project #project-container img{
+    width: 100%;
+}
+#main #latest-project #project-container p{
+    text-align: justify;
 }
