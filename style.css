@@ -52,7 +52,7 @@ body{
     width: 50%;
 }
 #header #header-banner .banner-content h1, #main #latest-project h1{
-    font-size: 4rem, 3rem;
+    font-size: 4rem;
     color: #363060;
 }
 #header #header-banner .banner-content span, #main #latest-project span{
@@ -112,4 +112,26 @@ body{
 #footer #inquiry h1{
     color: #ffffff;
     font-size: 2rem;
+}
+
+#footer #socials{
+    margin: 4rem auto;
+    text-align: center;
+}
+#footer #socials h2{
+    color: #363060;
+    font-size: 2rem;
+    margin: .8rem 0;
+}
+#footer #socials h3{
+    color: rgba(0,0,0,0.5);
+}
+#footer #social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+#footer #social-container img{
+    width: 40%;
 }
